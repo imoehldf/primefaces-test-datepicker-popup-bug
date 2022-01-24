@@ -31,7 +31,7 @@
 		<h5>Basic</h5>
     	<p:commandButton value="Show" type="button" icon="pi pi-external-link" onclick="PF('dlg1').show()"/>
     	<p:dialog header="Header" widgetVar="dlg1" minHeight="200" width="400" position="center,top" showEffect="fade">
-	    	<h:panelGrid columns="2"  cellpadding="5" styleClass="input-right-margins-panel">
+	    	<h:panelGrid columns="2"  cellpadding="5">
 			    <p:outputLabel for="phoneDialog" value="Phone Number: " />			
 				<p:inputMask id="phoneDialog" label="Phone Number" value="#{testView.stringDialog}" 
 					mask="(999) 999-9999 [x99999]" maxlength="14" />
