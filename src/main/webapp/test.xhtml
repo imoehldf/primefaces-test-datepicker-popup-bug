@@ -32,17 +32,17 @@
     	<p:commandButton value="Show" type="button" icon="pi pi-external-link" onclick="PF('dlg1').show()"/>
     	<p:dialog header="Header" widgetVar="dlg1" minHeight="200" width="400" position="center,top" showEffect="fade">
 	    	<h:panelGrid columns="2"  cellpadding="5" styleClass="input-right-margins-panel">
-			    <p:outputLabel for="phone" value="Phone Number: " />			
-				<p:inputMask id="phone" label="Phone Number" value="#{testView.stringDialog}" 
+			    <p:outputLabel for="phoneDialog" value="Phone Number: " />			
+				<p:inputMask id="phoneDialog" label="Phone Number" value="#{testView.stringDialog}" 
 					mask="(999) 999-9999 [x99999]" maxlength="14" />
 			
-				<p:outputLabel for="startDate" value="Start Date: "/>			
-	       		<p:datePicker id="startDate" value="#{testView.startDateDialog}"
+				<p:outputLabel for="startDateDialog" value="Start Date: "/>			
+	       		<p:datePicker id="startDateDialog" value="#{testView.startDateDialog}"
 		        	pattern="MM/dd/yyyy" mask="true">
 		        </p:datePicker>
 	
-				<p:outputLabel for="endDate" value="End Date: " />			
-	       		<p:datePicker id="endDate" value="#{testView.endDateDialog}"
+				<p:outputLabel for="endDateDialog" value="End Date: " />			
+	       		<p:datePicker id="endDateDialog" value="#{testView.endDateDialog}"
 		        			pattern="MM/dd/yyyy" mask="true" >
 		        </p:datePicker>
 	        </h:panelGrid>
