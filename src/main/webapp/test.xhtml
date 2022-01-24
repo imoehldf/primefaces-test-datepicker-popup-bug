@@ -19,12 +19,12 @@
 		
 			<p:outputLabel for="startDate" value="Start Date: "/>			
        		<p:datePicker id="startDate" value="#{testView.startDate}"
-	        	pattern="MM/dd/yyyy">
+	        	pattern="MM/dd/yyyy" mask="true">
 	        </p:datePicker>
 
 			<p:outputLabel for="endDate" value="End Date: " />			
        		<p:datePicker id="endDate" value="#{testView.endDate}"
-	        			pattern="MM/dd/yyyy" >
+	        			pattern="MM/dd/yyyy" mask="true" >
 	        </p:datePicker>
         </h:form>
 
